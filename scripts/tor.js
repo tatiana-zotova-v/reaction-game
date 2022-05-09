@@ -41,9 +41,9 @@ function getRandomColor () {
 
 function getRandomPosition () {
     var xPosition = Math.random() * 0.9 
-                  * document.documentElement.clientWidth;  // % ширины, чтобы не 
+                  * document.documentElement.clientWidth;
     var yPosition = Math.random() * 0.8 
-                  * document.documentElement.clientHeight; //выходить за предел
+                  * document.documentElement.clientHeight;
     return {x: xPosition + "px", y: yPosition + "px"};
 }
 
@@ -119,15 +119,4 @@ div.addEventListener("click", () => {
     startTime = startStopwatch();
     updateElement(div);
 })
-/*
-создать фигуру
-создать на нее слушателя
-запустить сек-мер
-при клике:
-    стоп время
-    вывести время
-    изменить класс фигуры (форму)
-    изменить цвет фигуры
-    изменить позицию фигуры
-    старт время
-*/
+
